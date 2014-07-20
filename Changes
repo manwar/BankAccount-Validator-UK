@@ -1,0 +1,10 @@
+Revision history for BankAccount-Validator-UK
+
+0.02    Wed Jun 27 12:13:14 2012
+        - Refactored method BankAccount::Validator::UK::Rule::get_rules().
+        - Added missing method get_trace(), silly me.
+        - Fixed the POD example for method get_trace().
+        - Added unit test for method get_trace().
+
+0.01    Mon May 21 11:53:11 2012
+        - First version released.
