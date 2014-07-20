@@ -38,7 +38,7 @@ document which  is available on their website
 
 L<http://www.vocalink.com/products/payments/customer-support-services/modulus-checking.aspx>
 
-It currently supports the document dated 24th Feb'2014.
+It currently supports the document version 3.0 dated 24th Feb'2014.
 
 Institutions covered by this document are below:
 
