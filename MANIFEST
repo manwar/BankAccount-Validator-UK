@@ -3,6 +3,7 @@ Changes
 lib/BankAccount/Validator/UK.pm
 lib/BankAccount/Validator/UK/Rule.pm
 Makefile.PL
+SIGNATURE
 MANIFEST
 MANIFEST.SKIP
 README
