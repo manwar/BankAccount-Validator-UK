@@ -1,5 +1,9 @@
 Revision history for BankAccount-Validator-UK
 
+0.03    Sun Jul 20 22:20:20 2014
+        - Updated the rule v 3.0 dated 24th Feb'2014
+        - Also Moo'ed the package/
+
 0.02    Wed Jun 27 12:13:14 2012
         - Refactored method BankAccount::Validator::UK::Rule::get_rules().
         - Added missing method get_trace(), silly me.

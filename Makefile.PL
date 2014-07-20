@@ -18,6 +18,8 @@ WriteMakefile(
         'Test::More' => 0,
     },
     PREREQ_PM => {
+        'Moo' => 0,
+        'namespace::clean' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'BankAccount-Validator-UK-*' },

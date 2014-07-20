@@ -16,6 +16,8 @@ my $builder = Module::Build->new(
         'Test::More' => 0,
     },
     requires => {
+        'Moo' => 0,
+        'namespace::clean' => 0,
     },
     add_to_cleanup     => [ 'BankAccount-Validator-UK-*' ],
     create_makefile_pl => 'traditional',
