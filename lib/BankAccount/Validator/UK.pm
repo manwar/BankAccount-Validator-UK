@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION = '0.03';
+$BankAccount::Validator::UK::VERSION = '0.04';
 
 use 5.006;
 use Data::Dumper;
@@ -15,7 +15,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
@@ -115,7 +115,7 @@ debug flag is off.
     my $account1 = BankAccount::Validator::UK->new();
 
     # Debug is turned on.
-    my $account2 = BankAccount::Validator::UK->new(1);
+    my $account2 = BankAccount::Validator::UK->new(debug => 1);
 
 =head1 METHODS
 

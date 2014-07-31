@@ -1,5 +1,10 @@
 Revision history for BankAccount-Validator-UK
 
+0.04    Thu Jul 31 09:10:25 2014
+        - Fixed the typo in the sample code in pod document.
+        - Minor tidy up.
+        - Added new test
+
 0.03    Sun Jul 20 22:20:20 2014
         - Updated the rule v 3.0 dated 24th Feb'2014
         - Also Moo'ed the package/

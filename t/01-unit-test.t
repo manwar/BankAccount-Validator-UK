@@ -1,5 +1,7 @@
 use BankAccount::Validator::UK;
-use Test::More tests => 5;
+use Test::More tests => 6;
+
+ok(BankAccount::Validator::UK->new(debug => 1));
 
 my $account = BankAccount::Validator::UK->new();
 eval {$account->is_valid()};
