@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION = '0.04';
+$BankAccount::Validator::UK::Rule::VERSION = '0.05';
 
 use 5.006;
 use strict; use warnings;
@@ -11,7 +11,7 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =head1 METHODS
 
