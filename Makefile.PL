@@ -21,6 +21,16 @@ WriteMakefile(
         'Moo' => 0,
         'namespace::clean' => 0,
     },
+    META_MERGE => {
+        'meta-spec' => { version => 2 },
+        resources   => {
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/Manwar/BankAccount-Validator-UK.git',
+                web  => 'https://github.com/Manwar/BankAccount-Validator-UK',
+            },
+        },
+    },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'BankAccount-Validator-UK-*' },
 );

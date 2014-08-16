@@ -1,5 +1,9 @@
 Revision history for BankAccount-Validator-UK
 
+0.07    Sat Aug 16 09:50:18 2014
+        - Added secction "REPOSITORY" to the pod
+        - Added key "META_MERGE" to Makefile.PL
+
 0.06    Sat Aug 09 01:40:30 2014
         - Updated Copyright year details.
 

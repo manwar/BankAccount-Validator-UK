@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION = '0.06';
+$BankAccount::Validator::UK::Rule::VERSION = '0.07';
 
 use 5.006;
 use strict; use warnings;
@@ -11,7 +11,7 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =head1 METHODS
 
@@ -1083,6 +1083,10 @@ sub _raw_data {
 =head1 AUTHOR
 
 Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
+
+=head1 REPOSITORY
+
+L<https://github.com/Manwar/BankAccount-Validator-UK>
 
 =head1 BUGS
 
