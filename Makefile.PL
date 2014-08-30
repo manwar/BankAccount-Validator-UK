@@ -21,16 +21,17 @@ WriteMakefile(
         'Moo' => 0,
         'namespace::clean' => 0,
     },
-    META_MERGE => {
+    dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    clean => { FILES => 'BankAccount-Validator-UK-*' },
+    (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
-        resources   => {
+        resources => {
             repository => {
                 type => 'git',
                 url  => 'https://github.com/Manwar/BankAccount-Validator-UK.git',
                 web  => 'https://github.com/Manwar/BankAccount-Validator-UK',
             },
-        },
-    },
-    dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'BankAccount-Validator-UK-*' },
+        }})
+     : ()
+    ),
 );

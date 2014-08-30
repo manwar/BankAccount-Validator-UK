@@ -14,13 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 2caea295e173e15a5b125be93af4d5843e2f2cbc Changes
+SHA1 23d42e360c344edaeb9caa491d993e38f5590fdf Changes
 SHA1 ae3ea3b5117eb753e91563c99d4d55e64e054af1 MANIFEST
 SHA1 5f29cdcbfacb9c46ac155fff9844aceeb064aef1 MANIFEST.SKIP
-SHA1 ac6dfd1f28e762e3173933fe485ae1e1a51d7d90 Makefile.PL
+SHA1 f05ddd4c7161b82fd86cecdb4762bad7f33eb4b7 Makefile.PL
 SHA1 c6dcfb08615df30f6c00131e1cda9d161ffef68c README
-SHA1 f8edd9cfb5cca7bbcca3cc3e2da0b8b4c27ff368 lib/BankAccount/Validator/UK.pm
-SHA1 b13e905013b027d0b8620f957ba90846ec6577b3 lib/BankAccount/Validator/UK/Rule.pm
+SHA1 a4b6ded375b2a9369a0a0b4ba2423abeae51800d lib/BankAccount/Validator/UK.pm
+SHA1 e5a79d4dfb8b1e4a72904edf9fe7ee5c48b68356 lib/BankAccount/Validator/UK/Rule.pm
 SHA1 7618c375c135d13f15fd50318109e473a6e60cc7 t/00-load.t
 SHA1 ea6bd2a24ac61a6f1b15817bb2c255077b931c3a t/01-unit-test.t
 SHA1 b636d70bbcbf3dc01066f72708b545dc6def5cc7 t/02-unit-test.t
@@ -29,11 +29,11 @@ SHA1 a572bbed348e70b106f01fa02fee8b8edd6735d5 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJT7xvMAAoJENoXJXWo7C/peDcH/R611RILiA4JGEzoCwFXUAbO
-+51ufOC0JYob2spGE+KIpJU/Dw/xqnWAa+EaEaWULtJ3158eClb/wfoulCgIbf21
-LGkIR62myVdbD0ur7noMtGfxjPHRSrTe8uZROFn7LPUscfm1KUBGivdgCj+y3hz3
-nXMmQg6fdPOHWhFrg/D5lMmOhY2jGN9qTFCNB+ETLTNELWf0RfXztttypZK2wqxn
-2JndvE+s8l8uN40nSYoKlyUiZMttlCUlgwDBPCFQDxFqZH9iUbDG8VedCNIgncwL
-DyWBhEylORcotDzjcPwnPvnCXyAuuUe2UbU5smvfye1vNl1Smdj68/O8VA9D0ac=
-=JX18
+iQEcBAEBAgAGBQJUASheAAoJENoXJXWo7C/pMQYIALSApUl5iOaoE5R+BxXkjmWX
+ieG/JxYCZi0svYb4K1fiUiwuLidiAZBuEZPiUnSh+hcXf2lakY9sDh4NH5HQHFV2
+7/vbYw6TbiZhGt7U7qkhYWio+XMYJS6GGNKfuhT23rzaKROilEUgGpyLGBG1FXA+
+g8hcyvlBiRFPoQaXV7zw+AkT2XyBjCiZloaD9a8tpJ0DFqzrjp1bgse9KTR+VBfB
+k9eZr0ufALpabj3hLckGVzf6W1+cDxMJjmdEIQ6rKmTaPkWhkvWhpvm9G1BZ2+CN
+hauuTiQX5c86JsGtRJR0NNytelVjRkc918TzhjlxNhAYZz8OIiElcgMqDwzoQFE=
+=nZqr
 -----END PGP SIGNATURE-----
