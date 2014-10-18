@@ -1,33 +1,38 @@
 Revision history for BankAccount-Validator-UK
 
-0.08    Sat Aug 30 02:20:00 2014
-        - Added key "META_MERGE" key on condition (ExUtils::MakeMake->VERSION(6.46).
+0.09  Sat Oct 18 15:27:39 2014
+      - Extracted the rule to separate files i.e. valacdos.txt and scsubtab.txt
+      - Copied the rule files in a shared folder of the distribution.
+      - Make use of 'autodie'
 
-0.07    Sat Aug 16 09:50:18 2014
-        - Added section "REPOSITORY" to the pod document.
-        - Added key "META_MERGE" to Makefile.PL file.
+0.08  Sat Aug 30 02:20:00 2014
+      - Added key "META_MERGE" key on condition (ExUtils::MakeMake->VERSION(6.46).
 
-0.06    Sat Aug 09 01:40:30 2014
-        - Updated Copyright year details.
+0.07  Sat Aug 16 09:50:18 2014
+      - Added section "REPOSITORY" to the pod document.
+      - Added key "META_MERGE" to Makefile.PL file.
 
-0.05    Fri Aug 08 23:25:09 2014
-        - Removed Build.PL script.
-        - Updated README file.
+0.06  Sat Aug 09 01:40:30 2014
+      - Updated Copyright year details.
 
-0.04    Thu Jul 31 09:10:25 2014
-        - Fixed the typo in the sample code in pod document.
-        - Minor tidied up.
-        - Added new test.
+0.05  Fri Aug 08 23:25:09 2014
+      - Removed Build.PL script.
+      - Updated README file.
 
-0.03    Sun Jul 20 22:20:20 2014
-        - Updated the rule v3.0 dated 24th Feb'2014.
-        - Also Moo'ed the package.
+0.04  Thu Jul 31 09:10:25 2014
+      - Fixed the typo in the sample code in pod document.
+      - Minor tidied up.
+      - Added new test.
 
-0.02    Wed Jun 27 12:13:14 2012
-        - Refactored method BankAccount::Validator::UK::Rule::get_rules().
-        - Added missing method get_trace(), silly me.
-        - Fixed the POD example for method get_trace().
-        - Added unit test for method get_trace().
+0.03  Sun Jul 20 22:20:20 2014
+      - Updated the rule v3.0 dated 24th Feb'2014.
+      - Also Moo'ed the package.
 
-0.01    Mon May 21 11:53:11 2012
-        - First version released.
+0.02  Wed Jun 27 12:13:14 2012
+      - Refactored method BankAccount::Validator::UK::Rule::get_rules().
+      - Added missing method get_trace(), silly me.
+      - Fixed the POD example for method get_trace().
+      - Added unit test for method get_trace().
+
+0.01  Mon May 21 11:53:11 2012
+      - First version released.

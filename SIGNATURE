@@ -14,14 +14,16 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 23d42e360c344edaeb9caa491d993e38f5590fdf Changes
-SHA1 ae3ea3b5117eb753e91563c99d4d55e64e054af1 MANIFEST
+SHA1 0e1a51a5a0d68efc4348214048333f89ee9c16b5 Changes
+SHA1 a138bc9f6ab6a8bd4d29830803144178eef374c1 MANIFEST
 SHA1 5f29cdcbfacb9c46ac155fff9844aceeb064aef1 MANIFEST.SKIP
-SHA1 f05ddd4c7161b82fd86cecdb4762bad7f33eb4b7 Makefile.PL
+SHA1 ba00e6c19a220fd7915c521d63bf5dac7abdfb01 Makefile.PL
 SHA1 c6dcfb08615df30f6c00131e1cda9d161ffef68c README
-SHA1 a4b6ded375b2a9369a0a0b4ba2423abeae51800d lib/BankAccount/Validator/UK.pm
-SHA1 e5a79d4dfb8b1e4a72904edf9fe7ee5c48b68356 lib/BankAccount/Validator/UK/Rule.pm
-SHA1 7618c375c135d13f15fd50318109e473a6e60cc7 t/00-load.t
+SHA1 4bb39115b3187d21a74b7389d6e6801a15e75d06 lib/BankAccount/Validator/UK.pm
+SHA1 db2a272ae00a4c65bf7e283bf90e5242bedda67f lib/BankAccount/Validator/UK/Rule.pm
+SHA1 514015ff282eac67f9422a90a6fc3420e2bca877 share/scsubtab.txt
+SHA1 1c13949f934575a57baf1ee9e683c3103c89adc8 share/valacdos.txt
+SHA1 ede6b1cc2c941eebc4a8426127c91673b789b441 t/00-load.t
 SHA1 ea6bd2a24ac61a6f1b15817bb2c255077b931c3a t/01-unit-test.t
 SHA1 b636d70bbcbf3dc01066f72708b545dc6def5cc7 t/02-unit-test.t
 SHA1 3e86d3e277d4233e55b8a4555bf6edf2dcdf7bd0 t/manifest.t
@@ -29,11 +31,11 @@ SHA1 a572bbed348e70b106f01fa02fee8b8edd6735d5 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJUASheAAoJENoXJXWo7C/pMQYIALSApUl5iOaoE5R+BxXkjmWX
-ieG/JxYCZi0svYb4K1fiUiwuLidiAZBuEZPiUnSh+hcXf2lakY9sDh4NH5HQHFV2
-7/vbYw6TbiZhGt7U7qkhYWio+XMYJS6GGNKfuhT23rzaKROilEUgGpyLGBG1FXA+
-g8hcyvlBiRFPoQaXV7zw+AkT2XyBjCiZloaD9a8tpJ0DFqzrjp1bgse9KTR+VBfB
-k9eZr0ufALpabj3hLckGVzf6W1+cDxMJjmdEIQ6rKmTaPkWhkvWhpvm9G1BZ2+CN
-hauuTiQX5c86JsGtRJR0NNytelVjRkc918TzhjlxNhAYZz8OIiElcgMqDwzoQFE=
-=nZqr
+iQEcBAEBAgAGBQJUQnreAAoJENoXJXWo7C/p6B8IAKq1+6I+dXhvwoYhS1Zm15gQ
+IZ5mM2pcb475IDXdg01rsEhVWxFqDPEgH9RD4ReDVLaW7ROtSMr6eIYEtOgD0ZHw
+3UpAOn6XQbPkJbqpaEQGdJR3Ab+HZ6agkNiRhiDTLdo4gYcj6kuSqoZqnn4FjubR
+eI5SuqQgFRBhKAVCAF0lSVevtQIr5qEQDgyxSZq+fV8Kh4cpvpox8i3k6juf80dI
+d5knui8smobsIrSn+RSocQ6BZEjoc2HkL2ziFBXSQhSWzcsUYGjxFtRznJcyIdCT
+gs2O9uv12wFpwqPen3rr8AuT+xlaWh3c7V8Mbx+Zc+LQJQSxv7GWBLmK1EYravE=
+=4aPX
 -----END PGP SIGNATURE-----

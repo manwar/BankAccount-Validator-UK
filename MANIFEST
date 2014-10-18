@@ -6,6 +6,8 @@ SIGNATURE
 MANIFEST
 MANIFEST.SKIP
 README
+share/scsubtab.txt
+share/valacdos.txt
 t/00-load.t
 t/01-unit-test.t
 t/02-unit-test.t

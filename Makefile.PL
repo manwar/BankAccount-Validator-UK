@@ -2,6 +2,9 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 use ExtUtils::MakeMaker;
+use File::ShareDir::Install;
+
+install_share dist => 'share';
 
 WriteMakefile(
     NAME               => 'BankAccount::Validator::UK',
@@ -12,14 +15,17 @@ WriteMakefile(
     PL_FILES           => {},
     MIN_PERL_VERSION   => 5.006,
     CONFIGURE_REQUIRES => {
-        'ExtUtils::MakeMaker' => 0,
+        'ExtUtils::MakeMaker'     => 0,
+        'File::ShareDir::Install' => '0.09',
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        'Moo' => 0,
+        'autodie'          => 0,
+        'Moo'              => 0,
         'namespace::clean' => 0,
+        'File::Share'      => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'BankAccount-Validator-UK-*' },
@@ -35,3 +41,6 @@ WriteMakefile(
      : ()
     ),
 );
+
+package MY;
+use File::ShareDir::Install 'postamble';

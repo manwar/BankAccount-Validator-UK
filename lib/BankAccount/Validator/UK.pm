@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION = '0.08';
+$BankAccount::Validator::UK::VERSION = '0.09';
 
 use 5.006;
 use Data::Dumper;
@@ -15,7 +15,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.08
+Version 0.09
 
 =cut
 
@@ -28,7 +28,7 @@ has trace      => (is => 'rw');
 has debug      => (is => 'ro', default => sub { return 0 });
 has last_check => (is => 'rw', default => sub { return 0 });
 has multi_rule => (is => 'ro', default => sub { return 0 });
-has sort_code  => (is => 'ro', default => sub { return BankAccount::Validator::UK::Rule::get_sort_code() });
+has sort_code  => (is => 'ro', default => sub { return BankAccount::Validator::UK::Rule::get_sort_codes() });
 
 =head1 DESCRIPTION
 
