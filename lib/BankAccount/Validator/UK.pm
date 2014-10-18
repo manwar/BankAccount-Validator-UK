@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION = '0.09';
+$BankAccount::Validator::UK::VERSION = '0.10';
 
 use 5.006;
 use Data::Dumper;
@@ -15,7 +15,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 
@@ -36,7 +36,7 @@ The module uses the algorithm provided by VOCALINK to validate the bank sort cod
 and account number.  It is  done by modulus  checking  method as specified in the
 document which is available on their website L<VOCALINK|http://www.vocalink.com/products/payments/customer-support-services/modulus-checking.aspx>
 
-It currently supports the document v3.0 dated 24th Feb'2014.
+It currently supports the document v3.10 dated 6th Oct'2014.
 
 Institutions covered by this document are below:
 
@@ -138,7 +138,7 @@ with 0 then its advisable to pass in as string i.e. '0nnnnnnn'.
 sub is_valid {
     my ($self, $sc, $an) = @_;
 
-    die("ERROR: Missing bank sort code.\n") unless defined $sc;
+    die("ERROR: Missing bank sort code.\n")      unless defined $sc;
     die("ERROR: Missing bank account number.\n") unless defined $an;
 
     ($sc, $an) = _prepare($sc, $an);

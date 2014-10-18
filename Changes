@@ -1,9 +1,12 @@
 Revision history for BankAccount-Validator-UK
 
+0.10  Sat Oct 18 15:50:10 2014
+      - Updated valacdos.txt file dated 6th Oct'2014.
+
 0.09  Sat Oct 18 15:27:39 2014
-      - Extracted the rule to separate files i.e. valacdos.txt and scsubtab.txt
+      - Extracted the rule to separate files i.e. valacdos.txt and scsubtab.txt.
       - Copied the rule files in a shared folder of the distribution.
-      - Make use of 'autodie'
+      - Make use of 'autodie' module.
 
 0.08  Sat Aug 30 02:20:00 2014
       - Added key "META_MERGE" key on condition (ExUtils::MakeMake->VERSION(6.46).
