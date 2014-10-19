@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION = '0.10';
+$BankAccount::Validator::UK::Rule::VERSION = '0.11';
 
 use 5.006;
 use strict; use warnings;
@@ -13,13 +13,13 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =head1 METHODS
 
 =head2 get_sort_codes()
 
-It  is  Used  by the module BankAccount::Validator::UK internally and returns the
+It  is  used  by the module BankAccount::Validator::UK internally and returns the
 substituting  sort  code  if found, as provided by VOCALINK in the document dated
 13th June'2005. The document is called scsubtab.txt.
 
