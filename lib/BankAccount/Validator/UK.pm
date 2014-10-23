@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION = '0.11';
+$BankAccount::Validator::UK::VERSION = '0.12';
 
 use 5.006;
 use Data::Dumper;
@@ -15,7 +15,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.11
+Version 0.12
 
 =cut
 
