@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION = '0.12';
+$BankAccount::Validator::UK::Rule::VERSION = '0.13';
 
 use 5.006;
 use strict; use warnings;
@@ -13,7 +13,7 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.12
+Version 0.13
 
 =head1 METHODS
 
@@ -63,7 +63,7 @@ sub get_rules {
         my @values   = split ' ';
         my $value_of = {};
         my $index    = 0;
-        foreach my $k ('start','end','mod','u','v','w','x','y','z','a','b','c','d','e','f','g','h') {
+        foreach my $k (qw(start end mod u v w x y z a b c d e f g h)) {
             $values[$index] =~ s/^\s+//g;
             $values[$index] =~ s/\s+$//g;
             if ($index == 2) {

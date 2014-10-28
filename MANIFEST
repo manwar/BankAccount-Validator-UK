@@ -13,3 +13,4 @@ t/01-unit-test.t
 t/02-unit-test.t
 t/manifest.t
 t/pod.t
+t/changes.t

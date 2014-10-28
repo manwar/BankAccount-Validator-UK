@@ -1,47 +1,51 @@
 Revision history for BankAccount-Validator-UK
 
-0.12  Thu Oct 23 23:48:10 2014
+0.13  2014-10-28T13:30:25+01:00
+      - Updated Changes file according to CPAN::Changes::Spec package.
+      - Added unit test changes.t file.
+
+0.12  2014-10-23T23:48:10+01:00
       - Made the package File::ShareDir::Install pre-requisite in the Makefile.PL file.
 
-0.11  Sun Oct 19 09:07:08 2014
+0.11  2014-10-19T09:07:08+01:00
       - Minor cosmetic changes to pod document.
 
-0.10  Sat Oct 18 15:50:10 2014
+0.10  2014-10-18T15:50:10+01:00
       - Updated valacdos.txt file dated 6th Oct'2014.
 
-0.09  Sat Oct 18 15:27:39 2014
+0.09  2014-10-18T15:27:39+01:00
       - Extracted the rule to separate files i.e. valacdos.txt and scsubtab.txt.
       - Copied the rule files in a shared folder of the distribution.
       - Make use of 'autodie' module.
 
-0.08  Sat Aug 30 02:20:00 2014
+0.08  2014-08-30T02:20:00+01:00
       - Added key "META_MERGE" key on condition (ExUtils::MakeMake->VERSION(6.46).
 
-0.07  Sat Aug 16 09:50:18 2014
+0.07  2014-08-16T09:50:18+01:00
       - Added section "REPOSITORY" to the pod document.
       - Added key "META_MERGE" to Makefile.PL file.
 
-0.06  Sat Aug 09 01:40:30 2014
+0.06  2014-08-09T01:40:30+01:00
       - Updated Copyright year details.
 
-0.05  Fri Aug 08 23:25:09 2014
+0.05  2014-08-08T23:25:09+01:00
       - Removed Build.PL script.
       - Updated README file.
 
-0.04  Thu Jul 31 09:10:25 2014
+0.04  2014-07-31T09:10:25+01:00
       - Fixed the typo in the sample code in pod document.
       - Minor tidied up.
       - Added new test.
 
-0.03  Sun Jul 20 22:20:20 2014
+0.03  2014-07-20T22:20:20+01:00
       - Updated the rule v3.0 dated 24th Feb'2014.
       - Also Moo'ed the package.
 
-0.02  Wed Jun 27 12:13:14 2012
+0.02  2012-06-27T12:13:14+01:00
       - Refactored method BankAccount::Validator::UK::Rule::get_rules().
       - Added missing method get_trace(), silly me.
       - Fixed the POD example for method get_trace().
       - Added unit test for method get_trace().
 
-0.01  Mon May 21 11:53:11 2012
+0.01  2012-05-21T11:53:11+01:00
       - First version released.
