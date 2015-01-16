@@ -1,13 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION = '0.13';
-
-use 5.006;
-use Data::Dumper;
-use BankAccount::Validator::UK::Rule;
-
-use Moo;
-use namespace::clean;
+$BankAccount::Validator::UK::VERSION = '0.14';
 
 =head1 NAME
 
@@ -15,9 +8,16 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.13
+Version 0.14
 
 =cut
+
+use 5.006;
+use Data::Dumper;
+use BankAccount::Validator::UK::Rule;
+
+use Moo;
+use namespace::clean;
 
 has sc         => (is => 'rw');
 has an         => (is => 'rw');
@@ -620,7 +620,7 @@ L<http://search.cpan.org/dist/BankAccount-Validator-UK/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2012 - 2014 Mohammad S Anwar.
+Copyright (C) 2012 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full

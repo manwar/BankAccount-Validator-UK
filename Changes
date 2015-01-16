@@ -1,5 +1,10 @@
 Revision history for BankAccount-Validator-UK
 
+0.14  2015-01-16T14:50:15+01:00
+      - Removed SIGNATURE file.
+      - Updated MANIFEST.SKIP file to ignore folder 'eumm/'.
+      - Updated Copyright year information.
+
 0.13  2014-10-28T13:30:25+01:00
       - Updated Changes file according to CPAN::Changes::Spec package.
       - Added unit test changes.t file.

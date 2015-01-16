@@ -1,11 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION = '0.13';
-
-use 5.006;
-use strict; use warnings;
-use autodie;
-use File::Share ':all';
+$BankAccount::Validator::UK::Rule::VERSION = '0.14';
 
 =head1 NAME
 
@@ -13,7 +8,18 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.13
+Version 0.14
+
+=cut
+
+use 5.006;
+use strict; use warnings;
+use autodie;
+use File::Share ':all';
+
+=head1 DESCRIPTION
+
+B<FOR INTERNAL USE ONLY>
 
 =head1 METHODS
 
@@ -147,7 +153,7 @@ L<http://search.cpan.org/dist/BankAccount-Validator-UK/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2012 - 2014 Mohammad S Anwar.
+Copyright (C) 2012 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
