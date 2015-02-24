@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION   = '0.15';
+$BankAccount::Validator::UK::Rule::VERSION   = '0.16';
 $BankAccount::Validator::UK::Rule::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.15
+Version 0.16
 
 =cut
 
@@ -26,7 +26,7 @@ B<FOR INTERNAL USE ONLY>
 
 =head2 get_sort_codes()
 
-It  is  used  by the module BankAccount::Validator::UK internally and returns the
+It is used by the module L<BankAccount::Validator::UK> internally. It returns the
 substituting  sort  code  if found, as provided by VOCALINK in the document dated
 13th June'2005. The document is called scsubtab.txt.
 
@@ -57,7 +57,7 @@ sub get_sort_codes {
 
 =head2 get_rules()
 
-It  is used by the module BankAccount::Validator::UK internally  and returns every
+It is used by the module L<BankAccount::Validator::UK> internally.It returns every
 possible rules cover by the document, as provided  by VOCALINK dated 23rd Mar'2015
 and is called valacdos.txt.
 
