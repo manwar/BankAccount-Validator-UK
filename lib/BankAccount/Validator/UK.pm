@@ -1,6 +1,7 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION = '0.14';
+$BankAccount::Validator::UK::VERSION   = '0.15';
+$BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
@@ -8,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.14
+Version 0.15
 
 =cut
 
@@ -36,7 +37,7 @@ The module uses the algorithm provided by VOCALINK to validate the bank sort cod
 and account number.  It is  done by modulus  checking  method as specified in the
 document which is available on their website L<VOCALINK|http://www.vocalink.com/products/payments/customer-support-services/modulus-checking.aspx>
 
-It currently supports the document v3.10 dated 6th Oct'2014.
+It currently supports the document v3.20 dated 23rd Mar'2015.
 
 Institutions covered by this document are below:
 
@@ -66,11 +67,7 @@ Institutions covered by this document are below:
 
 =item * Halifax
 
-=item * Hoares Bank
-
-=item * HSBC
-
-=item * Lloyds TSB
+=item * Lloyds
 
 =item * NatWest
 
@@ -78,19 +75,21 @@ Institutions covered by this document are below:
 
 =item * Northern
 
+=item * Orwell Union Ltd.
+
 =item * Royal Bank of Scotland
 
 =item * Santander
 
 =item * Secure Trust
 
+=item * TSB
+
 =item * Ulster Bank
 
 =item * Virgin Bank
 
 =item * Woolwich
-
-=item * Yorkshire Bank
 
 =back
 
@@ -110,7 +109,7 @@ debug flag is off.
     use BankAccount::Validator::UK;
 
     # Debug is turned off.
-    my $account1 = BankAccount::Validator::UK->new();
+    my $account1 = BankAccount::Validator::UK->new;
 
     # Debug is turned on.
     my $account2 = BankAccount::Validator::UK->new(debug => 1);
@@ -126,7 +125,7 @@ with 0 then its advisable to pass in as string i.e. '0nnnnnnn'.
     use strict; use warnings;
     use BankAccount::Validator::UK;
 
-    my $account = BankAccount::Validator::UK->new();
+    my $account = BankAccount::Validator::UK->new;
     print "[10-79-99][88837491] is valid.\n"
         if $account->is_valid(107999, 88837491);
 
@@ -244,7 +243,7 @@ and account number.
     use Data::Dumper;
     use BankAccount::Validator::UK;
 
-    my $account = BankAccount::Validator::UK->new();
+    my $account = BankAccount::Validator::UK->new;
     print "[87-14-27][09123496] is valid.\n"
         if $account->is_valid('871427', '09123496');
 
@@ -622,8 +621,8 @@ L<http://search.cpan.org/dist/BankAccount-Validator-UK/>
 
 Copyright (C) 2012 - 2015 Mohammad S Anwar.
 
-This  program  is  free software; you can redistribute it and/or modify it under
-the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
+This program  is  free software; you can redistribute it and / or modify it under
+the  terms  of the the Artistic License  (2.0). You may obtain a copy of the full
 license at:
 
 L<http://www.perlfoundation.org/artistic_license_2_0>
