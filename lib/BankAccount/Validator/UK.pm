@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION   = '0.16';
+$BankAccount::Validator::UK::VERSION   = '0.17';
 $BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.16
+Version 0.17
 
 =cut
 
@@ -116,11 +116,11 @@ debug flag is off.
 
 =head1 METHODS
 
-=head2 is_valid()
+=head2 is_valid($sort_code, $account_number)
 
-It expects two(2) parameters, first the sort  code & then the account number. The
- sort code can  be either nn-nn-nn or nnnnnn format. If the account number starts
-with 0 then its advisable to pass in as string i.e. '0nnnnnnn'.
+It expects two parameters i.e. the sort code and the account number.The sort code
+can be either nn-nn-nn or nnnnnn format. If the account number starts with 0 then
+its advisable to pass in as string i.e. '0nnnnnnn'.
 
     use strict; use warnings;
     use BankAccount::Validator::UK;
@@ -236,7 +236,7 @@ sub is_valid {
 
 =head2 get_trace()
 
-Returns the trace information about each rule that applied to the given  sortcode
+Returns the trace information about each rule that applied to the given sort code
 and account number.
 
     use strict; use warnings;
@@ -247,7 +247,7 @@ and account number.
     print "[87-14-27][09123496] is valid.\n"
         if $account->is_valid('871427', '09123496');
 
-    print "Trace information:\n" . Dumper($account->get_trace());
+    print "Trace information:\n" . Dumper($account->get_trace);
 
 =cut
 

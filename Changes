@@ -1,5 +1,9 @@
 Revision history for BankAccount-Validator-UK
 
+0.17  2015-03-01T08:30:00:+01:00
+      - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
+      - Updated description of method is_valid() in the pod document.
+
 0.16  2015-02-24T17:20:00:+01:00
       - Tidied up pod document.
 
