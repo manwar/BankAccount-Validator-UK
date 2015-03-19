@@ -2,6 +2,7 @@ Changes
 lib/BankAccount/Validator/UK.pm
 lib/BankAccount/Validator/UK/Rule.pm
 Makefile.PL
+LICENSE
 MANIFEST
 MANIFEST.SKIP
 README

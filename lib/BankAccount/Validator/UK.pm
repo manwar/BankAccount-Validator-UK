@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION   = '0.17';
+$BankAccount::Validator::UK::VERSION   = '0.18';
 $BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.17
+Version 0.18
 
 =cut
 
@@ -256,6 +256,10 @@ sub get_trace {
 
 	return $self->{trace} if scalar(@{$self->{trace}});
 }
+
+#
+#
+# PRIVATE METHODS
 
 sub _standard_check {
     my ($self, $_sort_code, $_account_number, $_rule) = @_;
