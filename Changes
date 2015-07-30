@@ -1,5 +1,14 @@
 Revision history for BankAccount-Validator-UK
 
+0.19  2015-07-29T12:00:00:+01:00
+      - Updated the valacdos.txt dated 20th Jul'2015.
+      - Added support for the following banks:
+        - Hoares Bank
+        - HSBC
+        - Metro Bank
+        - Unity Trust Bank
+        - Yorkshire Bank
+
 0.18  2015-03-19T16:48:00:+01:00
       - Added LICENSE file.
 

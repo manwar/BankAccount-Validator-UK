@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION   = '0.18';
+$BankAccount::Validator::UK::VERSION   = '0.19';
 $BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.18
+Version 0.19
 
 =cut
 
@@ -37,7 +37,7 @@ The module uses the algorithm provided by VOCALINK to validate the bank sort cod
 and account number.  It is  done by modulus  checking  method as specified in the
 document which is available on their website L<VOCALINK|http://www.vocalink.com/products/payments/customer-support-services/modulus-checking.aspx>
 
-It currently supports the L<document|http://www.vocalink.com/media/700427/vocalink_-_validating_account_numbers_v3.20.pdf> v3.20 dated 23rd Mar'2015.
+It currently supports the L<document|http://www.vocalink.com/media/713666/vocalink_-_validating_account_numbers_v3.30.pdf> v3.30 dated 20th Jul'2015.
 
 Institutions covered by this document are below:
 
@@ -67,7 +67,13 @@ Institutions covered by this document are below:
 
 =item * Halifax
 
+=item * Hoares Bank
+
+=item * HSBC
+
 =item * Lloyds
+
+=item * Metro Bank
 
 =item * NatWest
 
@@ -87,9 +93,13 @@ Institutions covered by this document are below:
 
 =item * Ulster Bank
 
+=item * Unity Trust Bank
+
 =item * Virgin Bank
 
 =item * Woolwich
+
+=item * Yorkshire Bank
 
 =back
 

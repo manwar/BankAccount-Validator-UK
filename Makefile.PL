@@ -18,16 +18,16 @@ WriteMakefile(
     MIN_PERL_VERSION   => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker'     => 0,
-        'File::ShareDir::Install' => 0,
+        'File::ShareDir::Install' => '0.09',
     },
     BUILD_REQUIRES   => {
-        'Test::More' => 0,
+        'Test::More' => '1.001014',
     },
     PREREQ_PM => {
-        'autodie'          => 0,
-        'Moo'              => 0,
-        'namespace::clean' => 0,
-        'File::Share'      => 0,
+        'autodie'          => '2.26',
+        'Moo'              => '2.000000',
+        'namespace::clean' => '0.24',
+        'File::Share'      => '0.25',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'BankAccount-Validator-UK-*' },
