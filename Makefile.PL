@@ -21,7 +21,7 @@ WriteMakefile(
         'File::ShareDir::Install' => '0.09',
     },
     BUILD_REQUIRES   => {
-        'Test::More' => '1.001014',
+        'Test::More' => 0,
     },
     PREREQ_PM => {
         'autodie'          => '2.26',
