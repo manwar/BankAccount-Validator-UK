@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION   = '0.23';
+$BankAccount::Validator::UK::VERSION   = '0.24';
 $BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.23
+Version 0.24
 
 =cut
 
@@ -36,7 +36,7 @@ has sort_code  => (is => 'ro', default => sub { return BankAccount::Validator::U
 The module uses the algorithm provided by VOCALINK to validate the bank sort code
 and account number.  It is  done by modulus  checking  method as specified in the
 document which is available on their website L<VOCALINK|https://www.vocalink.com/customer-support/modulus-checking>
-It currently supports the L<document|https://www.vocalink.com/media/1733/vocalink-validating-account-numbers-v350.pdf> v3.50 dated 7th Dec'2015.
+It currently supports the L<document|https://www.vocalink.com/media/1786/vocalink-validating-account-numbers-v380-v2.pdf> v3.80 dated 15th Feb'2016.
 
 Institutions covered by this document are below:
 
@@ -150,8 +150,8 @@ sub is_valid {
     die("ERROR: Missing bank account number.\n") unless defined $an;
 
     ($sc, $an) = _prepare($sc, $an);
-    die("Invalid sort code.\n") unless (length($sc) == 6);
-    die("Invalid account number.\n") unless (length($an) == 8);
+    die("ERROR: Invalid sort code.\n")      unless (length($sc) == 6);
+    die("ERROR: Invalid account number.\n") unless (length($an) == 8);
 
     my $_sort_code = _init('u', $sc);
     my $_account_number = _init('a', $an);
@@ -560,7 +560,7 @@ sub _prepare {
     $sc =~ s/[\-\s]+//g;
     $an =~ s/\s+//g;
 
-    die("ERROR: Invalid bank sort code [$sc].\n") unless ($sc =~ /^\d+$/);
+    die("ERROR: Invalid bank sort code [$sc].\n")      unless ($sc =~ /^\d+$/);
     die("ERROR: Invalid bank account number [$an].\n") unless ($an =~ /^\d+$/);
 
     if (length($an) == 10) {
@@ -593,7 +593,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/BankAccount-Validator-UK>
+L<https://github.com/manwar/BankAccount-Validator-UK>
 
 =head1 BUGS
 
@@ -632,7 +632,7 @@ L<http://search.cpan.org/dist/BankAccount-Validator-UK/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2012 - 2015 Mohammad S Anwar.
+Copyright (C) 2012 - 2016 Mohammad S Anwar.
 
 This program  is  free software; you can redistribute it and / or modify it under
 the  terms  of the the Artistic License  (2.0). You may obtain a copy of the full

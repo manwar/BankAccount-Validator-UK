@@ -1,5 +1,9 @@
 Revision history for BankAccount-Validator-UK
 
+0.24  2016-02-05T14:20:00:+01:00
+      - Updated the valacdos.txt dated 15th Feb'2016.
+      - Updated Copyright year information in the pod.
+
 0.23  2015-11-28T02:50:00:+01:00
       - Added key 'provides' to the Makefile.PL script.
 

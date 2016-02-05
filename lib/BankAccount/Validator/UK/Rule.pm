@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION   = '0.23';
+$BankAccount::Validator::UK::Rule::VERSION   = '0.24';
 $BankAccount::Validator::UK::Rule::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.23
+Version 0.24
 
 =cut
 
@@ -58,7 +58,7 @@ sub get_sort_codes {
 =head2 get_rules()
 
 It is used by the module L<BankAccount::Validator::UK> internally.It returns every
-possible rules cover by the document, as provided   by VOCALINK dated 7th Dec'2015
+possible rules cover by the document, as provided  by VOCALINK dated 15th Feb'2016
 and is called valacdos.txt.
 
 =cut
@@ -115,7 +115,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/BankAccount-Validator-UK>
+L<https://github.com/manwar/BankAccount-Validator-UK>
 
 =head1 BUGS
 
@@ -154,7 +154,7 @@ L<http://search.cpan.org/dist/BankAccount-Validator-UK/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2012 - 2015 Mohammad S Anwar.
+Copyright (C) 2012 - 2016 Mohammad S Anwar.
 
 This program  is  free software; you can redistribute it and / or modify it under
 the  terms  of the the Artistic  License (2.0). You may obtain a copy of the full

@@ -14,7 +14,6 @@ WriteMakefile(
     VERSION_FROM       => 'lib/BankAccount/Validator/UK.pm',
     ABSTRACT_FROM      => 'lib/BankAccount/Validator/UK.pm',
     LICENSE            => 'artistic_2',
-    PL_FILES           => {},
     MIN_PERL_VERSION   => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker'     => 0,
@@ -34,14 +33,14 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'BankAccount::Validator::UK'       => { file => 'lib/BankAccount/Validator/UK.pm'     , version => '0.23' },
-            'BankAccount::Validator::UK::Rule' => { file => 'lib/BankAccount/Validator/UK/Rule.pm', version => '0.23' },
+            'BankAccount::Validator::UK'       => { file => 'lib/BankAccount/Validator/UK.pm'     , version => '0.24' },
+            'BankAccount::Validator::UK::Rule' => { file => 'lib/BankAccount/Validator/UK/Rule.pm', version => '0.24' },
         },
         resources => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/Manwar/BankAccount-Validator-UK.git',
-                web  => 'https://github.com/Manwar/BankAccount-Validator-UK',
+                url  => 'https://github.com/manwar/BankAccount-Validator-UK.git',
+                web  => 'https://github.com/manwar/BankAccount-Validator-UK',
             },
         }})
      : ()
