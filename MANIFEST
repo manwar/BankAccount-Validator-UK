@@ -14,3 +14,5 @@ t/02-unit-test.t
 t/manifest.t
 t/pod.t
 t/changes.t
+t/meta-json.t
+t/meta-yml.t

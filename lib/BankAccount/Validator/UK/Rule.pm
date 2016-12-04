@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK::Rule;
 
-$BankAccount::Validator::UK::Rule::VERSION   = '0.26';
+$BankAccount::Validator::UK::Rule::VERSION   = '0.27';
 $BankAccount::Validator::UK::Rule::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK::Rule - Rules for validating UK bank account.
 
 =head1 VERSION
 
-Version 0.26
+Version 0.27
 
 =cut
 
