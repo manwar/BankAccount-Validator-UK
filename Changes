@@ -1,5 +1,11 @@
 Revision history for BankAccount::Validator::UK
 
+0.28  2017-01-28T20:35:00:+01:00
+      - Addition of new sorting codes. (v4.10)
+      - Updated the valacdos.txt dated 6th Mar'2017.
+      - Added support for Charity Bank, Contis Financial Services, Starling Bank and Tesco Bank.
+      - Removed support for HSBC.
+
 0.27  2016-12-04T19:00:00:+01:00
       - Added test scripts (t/meta-json.t and t/meta-yml.t).
 

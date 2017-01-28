@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION   = '0.27';
+$BankAccount::Validator::UK::VERSION   = '0.28';
 $BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.27
+Version 0.28
 
 =cut
 
@@ -36,7 +36,7 @@ has sort_code  => (is => 'ro', default => sub { return BankAccount::Validator::U
 The module uses the algorithm provided by VOCALINK to validate the bank sort code
 and account number.  It is  done by modulus  checking  method as specified in the
 document which is available on their website L<VOCALINK|https://www.vocalink.com/customer-support/modulus-checking>
-It currently supports the L<document|https://www.vocalink.com/media/2101/vocalink-validating-account-numbers-v400.pdf> v4.00 dated 9th Jan'2017.
+It currently supports the L<document|https://www.vocalink.com/media/2295/vocalink-validating-account-numbers-v410.pdf> v4.10 dated 6th Mar'2017.
 
 Institutions covered by this document are below:
 
@@ -54,9 +54,13 @@ Institutions covered by this document are below:
 
 =item * Bradford and Bingley Building Society
 
+=item * Charity Bank
+
 =item * Citibank
 
 =item * Clydesdale
+
+=item * Contis Financial Services
 
 =item * Co-Operative Bank
 
@@ -67,8 +71,6 @@ Institutions covered by this document are below:
 =item * Halifax
 
 =item * Hoares Bank
-
-=item * HSBC
 
 =item * Lloyds
 
@@ -87,6 +89,10 @@ Institutions covered by this document are below:
 =item * Santander
 
 =item * Secure Trust
+
+=item * Starling Bank
+
+=item * Tesco Bank
 
 =item * TSB
 
