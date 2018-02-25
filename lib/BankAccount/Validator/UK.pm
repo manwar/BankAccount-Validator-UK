@@ -1,6 +1,6 @@
 package BankAccount::Validator::UK;
 
-$BankAccount::Validator::UK::VERSION   = '0.34';
+$BankAccount::Validator::UK::VERSION   = '0.35';
 $BankAccount::Validator::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.34
+Version 0.35
 
 =cut
 
@@ -18,7 +18,7 @@ use Data::Dumper;
 use BankAccount::Validator::UK::Rule;
 
 use Moo;
-use namespace::clean;
+use namespace::autoclean;
 
 has sc         => (is => 'rw');
 has an         => (is => 'rw');
