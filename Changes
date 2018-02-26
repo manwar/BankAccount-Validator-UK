@@ -1,5 +1,8 @@
 Revision history for BankAccount::Validator::UK
 
+0.36  2018-02-26T10:30:00:+01:00
+      - Improved data loading.
+
 0.35  2018-02-25T16:30:00:+01:00
       - Used namespace::autoclean instead.
 
