@@ -628,23 +628,19 @@ You can also look for information at:
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=BankAccount-Validator-UK>
 
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/BankAccount-Validator-UK>
-
 =item * CPAN Ratings
 
 L<http://cpanratings.perl.org/d/BankAccount-Validator-UK>
 
-=item * Search CPAN
+=item * MetaCPAN
 
-L<http://search.cpan.org/dist/BankAccount-Validator-UK/>
+L<https://metacpan.org/dist/BankAccount-Validator-UK>
 
 =back
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2012 - 2017 Mohammad S Anwar.
+Copyright (C) 2012 - 2021 Mohammad S Anwar.
 
 This program  is  free software; you can redistribute it and / or modify it under
 the  terms  of the the Artistic License  (2.0). You may obtain a copy of the full
