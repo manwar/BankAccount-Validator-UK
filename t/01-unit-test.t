@@ -3,13 +3,15 @@
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
-use Test::More tests => 6;
+use Test::More tests => 7;
 use Test::Exception;
 use BankAccount::Validator::UK;
+
 
 ok(BankAccount::Validator::UK->new(debug => 1));
 
 my $account = BankAccount::Validator::UK->new();
+isa_ok($account, 'BankAccount::Validator::UK');
 
 throws_ok { $account->is_valid() } qr/ERROR: Missing bank sort code./, 'error caught okay';
 throws_ok { $account->is_valid(123456) } qr/ERROR: Missing bank account number./, 'error caught okay';
