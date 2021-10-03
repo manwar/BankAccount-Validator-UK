@@ -3,7 +3,7 @@
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
-use Test::More tests => 7;
+use Test::More tests => 8;
 use Test::Exception;
 use BankAccount::Validator::UK;
 
@@ -16,6 +16,7 @@ isa_ok($account, 'BankAccount::Validator::UK');
 throws_ok { $account->is_valid() } qr/ERROR: Missing bank sort code./, 'error caught okay';
 throws_ok { $account->is_valid(123456) } qr/ERROR: Missing bank account number./, 'error caught okay';
 throws_ok { $account->is_valid('ab3456', 12345678) } qr/ERROR: Invalid bank sort code./, 'error caught okay';
+throws_ok { $account->is_valid('1234', 12345678) } qr/ERROR: Invalid sort code./, 'error caught okay';
 throws_ok {$account->is_valid('123456', 'abcd5678') } qr/ERROR: Invalid bank account number./, 'error caught okay';
 
 $account->is_valid('871427', '09123496');
